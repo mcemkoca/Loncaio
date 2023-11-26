@@ -1,0 +1,51 @@
+import Link from "next/link";
+
+const Subscribe2 = () => {
+  return (
+    <section className="subscribe-section-two -type-4">
+      <div
+        className="background-image"
+        style={{ backgroundImage: "url(/images/index-15/cta-2/bg.png)" }}
+      ></div>
+      {/* End bg-image */}
+
+      <div className="auto-container">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-lg-5 col-md-10" data-aos="fade-right">
+            <div className="sec-title light mb-0 pb-20">
+              <h2 className="text-white">
+                En Değerli İşlerle Eşleşin, Cv'nizi Loncaio'ya Bırakın
+              </h2>
+              <div className="text text-white">
+                Hayalinizdeki isi bulun!
+                
+              </div>
+
+              <div className="mt-20">
+                <Link
+                  href="/candidates-dashboard/cv-manager"
+                  className="btn-cv"
+                >
+                  <i className="icon fa fa-file-upload"></i>
+                  Özgeçmişinizi Yükleyin
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* End .col */}
+
+          <div className="col-lg-5 md:mt-30">
+            <div className="image" data-aos="fade-left">
+              <img src="/images/index-15/cta-2/1.png" alt="image" />
+            </div>
+          </div>
+          {/* End image col */}
+        </div>
+        {/* End .row */}
+      </div>
+      {/* End auto-container */}
+    </section>
+  );
+};
+
+export default Subscribe2;
